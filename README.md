@@ -14,6 +14,16 @@
 ## Update Log
 [https://github.com/iziz/libPhoneNumber-iOS/wiki/Update-Log](https://github.com/iziz/libPhoneNumber-iOS/wiki/Update-Log)
 
+### Updating this repository
+
+To keep up to date, we need to routinely refresh metadata values from Google's [libPhoneNumber](https://github.com/google/libphonenumber) repository.
+
+In Terminal, run the following from within the root level of this repository:
+- `swift scripts/metadataGenerator.swift`
+    - You should see a message containing "Can't find variable window"
+- `libPhoneNumber/GeneratePhoneNumberHeader.sh`
+
+If there's been any changes in the metadata within Google's `libPhoneNumber` library, they should now be added to the proper places within this codebase.
 
 ## Issue
 You can check phone number validation using below link.
