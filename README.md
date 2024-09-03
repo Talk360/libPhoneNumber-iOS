@@ -25,6 +25,11 @@ In Terminal, run the following from within the root level of this repository:
 
 If there's been any changes in the metadata within Google's `libPhoneNumber` library, they should now be added to the proper places within this codebase.
 
+Finally, push the changes to this branch and tag it. We currently follow the convention of using the full libPhoneNumber semver as PATCH, for instance:
+v1.0.2 with libPhoneNumber v8.13.44 turns into v1.0.81344
+
+Due to this we can use the semver versioning in Xcode / SPM instead of targeting a specific branch.
+
 ## Issue
 You can check phone number validation using below link.
 https://rawgit.com/googlei18n/libphonenumber/master/javascript/i18n/phonenumbers/demo-compiled.html
